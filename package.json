@@ -1,5 +1,5 @@
 {
-  "name": "14tut",
+  "name": "States_MongoDB",
   "version": "1.0.0",
   "description": "MongoDB tutorial",
   "main": "server.js",
@@ -7,7 +7,7 @@
     "start": "node server",
     "dev": "nodemon server"
   },
-  "author": "Dave Gray",
+  "author": "Isaac Nevarez-Saenz",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
@@ -24,5 +24,8 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
+  }, 
+  "engines": {
+    "node": "^16.0.0"
   }
 }
