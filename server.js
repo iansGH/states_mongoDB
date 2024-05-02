@@ -12,7 +12,18 @@ const PORT = process.env.PORT || 3500;
 connectDB();
 
 // Cross Origin Resource Sharing
-app.use(cors(corsOptions));
+//app.use(cors(corsOptions));
+ 
+app.use(cors())
+ 
+app.get('/products/:id', function (req, res, next) {
+  res.json({msg: 'This is CORS-enabled for all origins!'})
+})
+ 
+app.listen(80, function () {
+  console.log('CORS-enabled web server listening on port 80')
+})
+
 
 // built-in middleware to handle urlencoded form data
 app.use(express.urlencoded({ extended: false }));
