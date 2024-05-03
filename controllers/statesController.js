@@ -74,7 +74,7 @@ const getPopulation = async (req, res) => {
     const state = jsonData.find((state) => state.code === req.params.state);
     res.json({
         state: state.state,
-        population: state.population
+        population: state.population.toLocaleString("en-US")
     });
 }
 

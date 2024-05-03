@@ -38,3 +38,5 @@
 20240503	13:12:09	ee6bfc89-4c6c-4dcc-94a8-1986badc5ab4	GET	undefined	/states/hellohello
 20240503	13:14:14	dc58e17a-b572-437d-a923-0b817ec0993e	GET	undefined	/states/hellohello
 20240503	13:18:31	bfdd3110-7a6b-4e10-8cd1-4d97fddde07d	GET	undefined	/states/co/nickname
+20240503	13:26:31	43f2e747-f50b-455d-9581-ccf4326bc5e1	GET	undefined	/states/ny/population
+20240503	13:48:06	ba3bcad2-aab9-4703-8535-b666888cf37c	GET	undefined	/states/ny/population
