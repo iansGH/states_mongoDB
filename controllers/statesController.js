@@ -92,8 +92,11 @@ const getFunFact = async (req, res) => {
 
     const factArray = mongoData.find((state) => state.stateCode == req.params.state)?.funfacts;
 
+    //get full name
+    const stateName = jsonData.find(state => state.code === req.params.state).state;
+
     if (!factArray) {
-        return res.status(404).json({ "message": `No Fun Facts found for ${req.params.state}`});
+        return res.status(404).json({ "message": `No Fun Facts found for ${stateName}`});
     }
     
     res.json({
@@ -162,7 +165,7 @@ const deleteFunFact = async (req, res) => {
 
     const mongoState = await State.findOne({stateCode: req.params.state}).exec();
 
-    //check specific response
+    //get full name 
     const stateName = jsonData.find(state => state.code === req.params.state).state;
     
     if(!mongoState?.funfacts) {
