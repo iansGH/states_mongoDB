@@ -140,18 +140,21 @@ const updateFunFact = async (req, res) => {
         return res.status(400).json({ 'message': 'State fun fact index value required' });
 
     if (!req?.body?.funfact) 
-        return res.status(400).json({ 'message': 'State fun facts value required' });
+        return res.status(400).json({ 'message': 'State fun fact value required' });
 
     const mongoState = await State.findOne({stateCode: req.params.state}).exec();
 
     const factArray = mongoState.funfacts;
 
+    //get full name 
+    const stateName = jsonData.find(state => state.code === req.params.state).state;
+
     if(!factArray) {
-        return res.status(404).json({"message": `No Fun Facts found for ${req.params.state}`});
+        return res.status(404).json({"message": `No Fun Facts found for ${stateName}`});
     }
     
     if(!factArray[parseInt(req.body.index) - 1]) {
-        return res.status(404).json({"message": `No Fun Fact found at ${req.body.index} for ${req.params.state}`});
+        return res.status(404).json({"message": `No Fun Fact found at that index for ${stateName}`});
     }
 
     mongoState.funfacts[parseInt(req.body.index) - 1] = req.body.funfact;
