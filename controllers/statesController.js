@@ -41,10 +41,7 @@ const getState = async (req, res) => {
     
     const jsonState = jsonData.find((state) => state.code === req.params.state);
 
-    if (!mongoState) {
-        return res.status(204).json({ "message": `No state matches code ${req.params.state}.` });
-    }
-    else{ //mongoState exists
+    if (mongoState){ //mongoState exists
         //store funfacts in an array
         const factArray = mongoState.funfacts;
         //check for an array that is not empty
