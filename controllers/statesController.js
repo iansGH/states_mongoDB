@@ -144,7 +144,7 @@ const updateFunFact = async (req, res) => {
 
     const mongoState = await State.findOne({stateCode: req.params.state}).exec();
 
-    const factArray = mongoState.funfacts;
+    const factArray = mongoState?.funfacts;
 
     //get full name 
     const stateName = jsonData.find(state => state.code === req.params.state).state;
