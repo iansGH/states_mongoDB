@@ -35,7 +35,7 @@ const getAllstates = async (req, res) => {
 }
 
 const getState = async (req, res) => {
-    if (!req?.params?.state) return res.status(400).json({ 'message': 'state code required.' });
+    if (!req?.params?.state) return res.status(400).json({ 'message': 'Invalid state abbreviation parameter' });
 
     const mongoState = await State.findOne({ stateCode: req.params.state }, { _id: 0} ).exec();
     

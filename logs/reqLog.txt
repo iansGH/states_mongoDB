@@ -27,3 +27,5 @@
 20240503	12:37:52	ca32c91f-2364-406d-96cf-382371cc1c4c	GET	undefined	/states/nh
 20240503	12:37:54	169afbdd-d474-46bc-a835-eafcd6105ecc	GET	undefined	/states/nH
 20240503	12:37:56	d3ef6262-241e-4bab-940a-a68558a5b9fb	GET	undefined	/states/ks
+20240503	12:50:40	7966a550-cd03-4292-9df3-7e5e22fd7d02	GET	undefined	/states/RI
+20240503	12:51:09	170decf8-f19f-44a5-8b84-afe830ebbc1e	GET	undefined	/states/anything
