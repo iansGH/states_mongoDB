@@ -74,7 +74,7 @@ const getPopulation = async (req, res) => {
     const state = jsonData.find((state) => state.code === req.params.state);
     res.json({
         state: state.state,
-        capital: state.population
+        population: state.population
     });
 }
 
@@ -82,7 +82,7 @@ const getAdmission = async (req, res) => {
     const state = jsonData.find((state) => state.code === req.params.state);
     res.json({
         state: state.state,
-        capital: state.admission_date
+        admitted: state.admission_date
     });
 }
 
