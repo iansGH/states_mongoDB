@@ -13,7 +13,7 @@ const verifyStates = (req, res, next) => {
 
   // If invalid, return a bad request status with the required message.
   if (!validState) {
-      return res.status(400).json({ message: 'State abbreviation required' });
+      return res.status(400).json({ message: 'Invalid state abbreviation parameter' });
     }
   // If valid, attach the verified code to the request object: req.code = stateCode and call next() to move on.
   req.params.state = stateCode;
