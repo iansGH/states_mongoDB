@@ -29,3 +29,4 @@
 20240503	12:37:56	d3ef6262-241e-4bab-940a-a68558a5b9fb	GET	undefined	/states/ks
 20240503	12:50:40	7966a550-cd03-4292-9df3-7e5e22fd7d02	GET	undefined	/states/RI
 20240503	12:51:09	170decf8-f19f-44a5-8b84-afe830ebbc1e	GET	undefined	/states/anything
+20240503	12:53:06	31f14b5e-16c6-47b4-bfff-95e8fadd6e34	GET	undefined	/states/GA/funfact
