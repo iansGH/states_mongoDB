@@ -37,3 +37,4 @@
 20240503	13:12:08	f6c66fa5-c39b-40fd-aaa2-83163ff35b9a	GET	undefined	/states/hellohello
 20240503	13:12:09	ee6bfc89-4c6c-4dcc-94a8-1986badc5ab4	GET	undefined	/states/hellohello
 20240503	13:14:14	dc58e17a-b572-437d-a923-0b817ec0993e	GET	undefined	/states/hellohello
+20240503	13:18:31	bfdd3110-7a6b-4e10-8cd1-4d97fddde07d	GET	undefined	/states/co/nickname
