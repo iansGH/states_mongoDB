@@ -1,8 +1,8 @@
 require('dotenv').config();
 const express = require('express');
-const app = express();
 const path = require('path');
 const cors = require('cors');
+const app = express();
 const corsOptions = require('./config/corsOptions');
 const mongoose = require('mongoose');
 const connectDB = require('./config/dbConn');
@@ -13,17 +13,7 @@ connectDB();
 
 // Cross Origin Resource Sharing
 //app.use(cors(corsOptions));
- 
-app.use(cors())
- 
-app.get('/products/:id', function (req, res, next) {
-  res.json({msg: 'This is CORS-enabled for all origins!'})
-})
- 
-app.listen(80, function () {
-  console.log('CORS-enabled web server listening on port 80')
-})
-
+app.use(cors());
 
 // built-in middleware to handle urlencoded form data
 app.use(express.urlencoded({ extended: false }));

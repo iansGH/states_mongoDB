@@ -4,7 +4,7 @@ const statesController = require('../../controllers/statesController');
 const verifyStates = require('../../middleware/verifyStates');
 
 router.route('/')
-    .get(statesController.getAllstates)
+    .get(statesController.getAllstates);
 
 router.route('/:state')
     .get(verifyStates, statesController.getState);
