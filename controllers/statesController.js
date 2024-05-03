@@ -180,7 +180,7 @@ const deleteFunFact = async (req, res) => {
     }
 
     if(!mongoState?.funfacts[parseInt(req.body.index) - 1]) {
-        return res.status(404).json({"message": `No Fun Fact found at ${req.body.index} for ${stateName}`});
+        return res.status(404).json({"message": `No Fun Fact found at that index for ${stateName}`});
     }
 
     mongoState?.funfacts.splice(parseInt(req.body.index) - 1, 1);
