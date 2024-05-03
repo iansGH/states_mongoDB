@@ -106,7 +106,11 @@ const getFunFact = async (req, res) => {
 
 const createFunFact = async (req, res) => {
     if (!req?.body?.funfacts) {
-        return res.status(400).json({ 'message': 'State fun facts value must be an array' });
+        return res.status(404).json({ 'message': 'State fun facts value required' });
+    }
+
+    if(!Array.isArray(req?.body?.funfacts)){
+        return res.status(404).json({ 'message': 'State fun facts value must be an array'});
     }
 
     const mongoState = await State.findOne({stateCode: req.params.state}).exec();
