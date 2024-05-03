@@ -10,18 +10,16 @@
   "author": "Isaac Nevarez-Saenz",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^5.0.1",
     "body-parser": "^1.20.2",
-    "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "date-fns": "^2.23.0",
-    "dotenv": "^16.4.5",
-    "engines": "^0.4.0",
-    "express": "^4.19.2",
-    "jsonwebtoken": "^8.5.1",
-    "mongodb": "^6.5.0",
-    "mongoose": "^6.12.8",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.11",
     "uuid": "^8.3.2"
+  },
+  "engines": {
+    "node": "16.14.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
