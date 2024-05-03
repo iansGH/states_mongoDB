@@ -1,0 +1,10 @@
+20240503	09:56:42	b89240f1-8428-4ee3-a0b7-408bfadc0d9d	OPTIONS	https://www.google.com	/
+20240503	09:56:42	8fcc8163-f699-4783-82b6-f3136d45e355	GET	https://www.google.com	/
+20240503	10:15:38	7aa77b08-4eca-419d-ae5d-538f50a0a2c7	GET	undefined	/
+20240503	10:15:38	2ce66562-5b09-48b4-9ec3-67d3c50d815e	GET	undefined	/css/style.css
+20240503	10:15:38	6d329814-0760-4cb0-b490-cd65b7c5ee40	GET	undefined	/favicon.ico
+20240503	10:16:55	60515c94-9e0b-4af5-aaab-7ea2f66c63a4	GET	undefined	/css/style.css
+20240503	10:16:59	ac0a44e6-ae61-45aa-86c2-f3007238023b	GET	undefined	/favicon.ico
+20240503	10:16:59	6f574272-7f05-48fa-a3c5-500000e78c7a	GET	undefined	/css/style.css
+20240503	10:17:03	a41b097b-b95b-4078-a3df-9fbc6c24eaf4	GET	undefined	/favicon.ico
+20240503	10:17:03	f91a0367-0d5c-4412-a69b-2feadff84186	GET	undefined	/css/style.css
